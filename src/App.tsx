@@ -29,8 +29,10 @@ import { TableReservationModal } from './components/TableReservationModal';
 import { ExperienceReservationModal } from './components/ExperienceReservationModal';
 
 import { Room, Experience, ROOMS_DATA } from './data/hotelData';
+import { IMAGES } from './assets/images';
 
 export default function App() {
+
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
   const [selectedRoomForBooking, setSelectedRoomForBooking] = useState<Room | null>(null);
   const [selectedRoomForDetail, setSelectedRoomForDetail] = useState<Room | null>(null);
@@ -170,7 +172,7 @@ export default function App() {
           duration: '90 Minutes',
           timing: 'By Reservation',
           description: 'Customized therapeutic body massage and skin restoration using rare Himalayan cedarwood, jasmine, and cold-pressed cold oils.',
-          image: '/src/assets/images/wellness_spa_pool_1790869781996.jpg',
+          image: IMAGES.wellness,
           highlights: ['Hot Basalt Stones', 'Organic Himalayan Botanicals', 'Private Hydrotherapy Suite']
         } : null as any)} />
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, Droplets, Sun, Wind, Heart, ArrowRight } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 interface WellnessSectionProps {
   onBookSpa: () => void;
@@ -39,7 +40,7 @@ export const WellnessSection: React.FC<WellnessSectionProps> = ({ onBookSpa }) =
           <div className="lg:col-span-6 relative order-2 lg:order-1 group">
             <div className="aspect-[4/3] overflow-hidden border border-white/10 shadow-2xl">
               <img
-                src="/src/assets/images/wellness_spa_pool_1790869781996.jpg"
+                src={IMAGES.wellness}
                 alt="Aurelia Wellness Spa and Infinity Plunge Pool"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 referrerPolicy="no-referrer"

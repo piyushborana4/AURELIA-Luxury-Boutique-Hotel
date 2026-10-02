@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Flame, UtensilsCrossed, Wine, Clock, Sparkles, ArrowRight } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 interface DiningSectionProps {
+
   onReserveTable: () => void;
 }
 
@@ -84,7 +86,7 @@ export const DiningSection: React.FC<DiningSectionProps> = ({ onReserveTable }) 
           <div className="lg:col-span-6 relative group">
             <div className="aspect-[4/3] overflow-hidden border border-white/10 shadow-2xl">
               <img
-                src="/src/assets/images/dining_ember_restaurant_1790869771840.jpg"
+                src={IMAGES.dining}
                 alt="Ember Fine Dining Restaurant at Aurelia"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 referrerPolicy="no-referrer"

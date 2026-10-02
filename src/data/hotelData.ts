@@ -1,3 +1,5 @@
+import { IMAGES } from '../assets/images';
+
 export interface Room {
   id: string;
   name: string;
@@ -58,11 +60,11 @@ export const ROOMS_DATA: Room[] = [
     capacity: '2 Guests',
     pricePerNight: 18000,
     featured: false,
-    image: '/src/assets/images/room_signature_suite_1790869759286.jpg',
+    image: IMAGES.room,
     gallery: [
-      '/src/assets/images/room_signature_suite_1790869759286.jpg',
-      '/src/assets/images/hero_aurelia_resort_1790869743175.jpg',
-      '/src/assets/images/wellness_spa_pool_1790869781996.jpg'
+      IMAGES.room,
+      IMAGES.hero,
+      IMAGES.wellness
     ],
     description: 'Designed for effortless repose, the Aurelia Deluxe blends soft natural textures with tailored millwork. Wake up to floor-to-ceiling garden greenery, bespoke Italian linen, and custom herbal tea selections.',
     features: ['Plush King Bed', 'En-Suite Rain Shower', 'Handcrafted Teak Wardrobes', 'Bose Sound System'],
@@ -79,11 +81,11 @@ export const ROOMS_DATA: Room[] = [
     capacity: '2 Guests',
     pricePerNight: 28000,
     featured: true,
-    image: '/src/assets/images/room_signature_suite_1790869759286.jpg',
+    image: IMAGES.room,
     gallery: [
-      '/src/assets/images/room_signature_suite_1790869759286.jpg',
-      '/src/assets/images/hero_aurelia_resort_1790869743175.jpg',
-      '/src/assets/images/experience_sunset_lounge_1790869793464.jpg'
+      IMAGES.room,
+      IMAGES.hero,
+      IMAGES.lounge
     ],
     description: 'Our most sought-after accommodation. The Signature Suite features an open architectural layout with a dedicated reading nook, deep soaking bathtub, and a private teak terrace overlooking the sunset horizon.',
     features: ['650 sq ft Living Space', 'Private Teak Balcony', 'Freestanding Soaking Bathtub', 'Walk-in Dressing Room'],
@@ -100,11 +102,11 @@ export const ROOMS_DATA: Room[] = [
     capacity: '2 - 3 Guests',
     pricePerNight: 42000,
     featured: false,
-    image: '/src/assets/images/hero_aurelia_resort_1790869743175.jpg',
+    image: IMAGES.hero,
     gallery: [
-      '/src/assets/images/hero_aurelia_resort_1790869743175.jpg',
-      '/src/assets/images/room_signature_suite_1790869759286.jpg',
-      '/src/assets/images/wellness_spa_pool_1790869781996.jpg'
+      IMAGES.hero,
+      IMAGES.room,
+      IMAGES.wellness
     ],
     description: 'A masterpiece of contemporary hospitality. Spread across 900 square feet, the Grand Terrace Suite boasts a secluded sun deck with private daybeds, a separate parlor for intimate dining, and marble bathroom suite.',
     features: ['900 sq ft of Space', 'Secluded Sun Deck', 'Hand-Carved Stone Bathtub', 'Private Dining Parlor'],
@@ -121,11 +123,11 @@ export const ROOMS_DATA: Room[] = [
     capacity: '4 Guests',
     pricePerNight: 68000,
     featured: false,
-    image: '/src/assets/images/wellness_spa_pool_1790869781996.jpg',
+    image: IMAGES.wellness,
     gallery: [
-      '/src/assets/images/wellness_spa_pool_1790869781996.jpg',
-      '/src/assets/images/hero_aurelia_resort_1790869743175.jpg',
-      '/src/assets/images/room_signature_suite_1790869759286.jpg'
+      IMAGES.wellness,
+      IMAGES.hero,
+      IMAGES.room
     ],
     description: 'The pinnacle of exclusivity. The Royal Residence occupies an isolated garden wing featuring a private heated plunge pool, dual primary suites, wine cellar showcase, and full private culinary service.',
     features: ['1,400 sq ft Dual Suite', 'Heated Private Plunge Pool', 'Dedicated Private Butler', 'Sommelier Curated Wine Cellar'],
@@ -141,7 +143,7 @@ export const EXPERIENCES_DATA: Experience[] = [
     duration: '75 Minutes',
     timing: '06:30 AM Daily',
     description: 'Begin the day with guided pranayama and vinyasa yoga on our open-air pavilion overlooking the morning mist gardens.',
-    image: '/src/assets/images/wellness_spa_pool_1790869781996.jpg',
+    image: IMAGES.wellness,
     highlights: ['Certified Master Yogis', 'Singing Bowl Sound Bath', 'Botanical Herbal Elixirs']
   },
   {
@@ -151,7 +153,7 @@ export const EXPERIENCES_DATA: Experience[] = [
     duration: '2.5 Hours',
     timing: '7:30 PM & 9:00 PM',
     description: 'An exclusive multi-course dining journey created personally by Chef Vikram, featuring wood-fired heirloom ingredients and vintage wine pairings.',
-    image: '/src/assets/images/dining_ember_restaurant_1790869771840.jpg',
+    image: IMAGES.dining,
     highlights: ['7-Course Seasonal Menu', 'Sommelier Cellar Selection', 'Private Candlelit Courtyard']
   },
   {
@@ -161,7 +163,7 @@ export const EXPERIENCES_DATA: Experience[] = [
     duration: 'Evenings',
     timing: '05:30 PM - 08:30 PM',
     description: 'Craft cocktails, acoustic vinyl sessions, and golden-hour reflections across the horizon infinity pool.',
-    image: '/src/assets/images/experience_sunset_lounge_1790869793464.jpg',
+    image: IMAGES.lounge,
     highlights: ['Artisanal Botanical Cocktails', 'Acoustic Vinyl Curations', 'Open Fire Table Ambience']
   },
   {
@@ -171,7 +173,7 @@ export const EXPERIENCES_DATA: Experience[] = [
     duration: '90 Minutes',
     timing: 'By Reservation',
     description: 'Customized therapeutic body massage and skin restoration using rare Himalayan cedarwood, jasmine, and cold-pressed cold oils.',
-    image: '/src/assets/images/wellness_spa_pool_1790869781996.jpg',
+    image: IMAGES.wellness,
     highlights: ['Hot Basalt Stones', 'Organic Himalayan Botanicals', 'Private Hydrotherapy Suite']
   },
   {
@@ -181,7 +183,7 @@ export const EXPERIENCES_DATA: Experience[] = [
     duration: '3.5 Hours',
     timing: '09:00 AM & 03:00 PM',
     description: 'A private chauffeur-driven insider journey into Mumbai\'s architectural landmarks, hidden art galleries, and historic coastal paths.',
-    image: '/src/assets/images/hero_aurelia_resort_1790869743175.jpg',
+    image: IMAGES.hero,
     highlights: ['Private Luxury Chauffeur', 'Local Architectural Historian', 'Curated Artisan Tastings']
   },
   {
@@ -191,7 +193,7 @@ export const EXPERIENCES_DATA: Experience[] = [
     duration: '60 Minutes',
     timing: '07:30 AM & 05:00 PM',
     description: 'Slow down and reconnect along guided pathways through 4 acres of mature banyan groves, orchid gardens, and tranquil water features.',
-    image: '/src/assets/images/room_signature_suite_1790869759286.jpg',
+    image: IMAGES.room,
     highlights: ['Over 120 Native Flora Species', 'Naturalist Guide', 'Bird Watching Station']
   }
 ];
@@ -202,7 +204,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'The Evening Reflection Pool',
     category: 'architecture',
     caption: 'Travertine stone terraces illuminated at golden hour.',
-    image: '/src/assets/images/hero_aurelia_resort_1790869743175.jpg',
+    image: IMAGES.hero,
     spanClass: 'col-span-1 md:col-span-2 row-span-2'
   },
   {
@@ -210,7 +212,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'The Signature Suite Living Quarters',
     category: 'rooms',
     caption: 'Natural linen, warm teak, and floor-to-ceiling greenery.',
-    image: '/src/assets/images/room_signature_suite_1790869759286.jpg',
+    image: IMAGES.room,
     spanClass: 'col-span-1 md:col-span-1 row-span-1'
   },
   {
@@ -218,7 +220,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Ember Open Hearth Dining',
     category: 'dining',
     caption: 'Wood-fired gastronomy in an intimate, moody setting.',
-    image: '/src/assets/images/dining_ember_restaurant_1790869771840.jpg',
+    image: IMAGES.dining,
     spanClass: 'col-span-1 md:col-span-1 row-span-1'
   },
   {
@@ -226,7 +228,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Infinity Wellness Sanctuary',
     category: 'wellness',
     caption: 'Indoor-outdoor heated stone plunge pool and relaxation arcade.',
-    image: '/src/assets/images/wellness_spa_pool_1790869781996.jpg',
+    image: IMAGES.wellness,
     spanClass: 'col-span-1 md:col-span-1 row-span-2'
   },
   {
@@ -234,7 +236,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'The Rooftop Firepit Lounge',
     category: 'moments',
     caption: 'Handcrafted mixology against sunset skies.',
-    image: '/src/assets/images/experience_sunset_lounge_1790869793464.jpg',
+    image: IMAGES.lounge,
     spanClass: 'col-span-1 md:col-span-2 row-span-1'
   },
   {
@@ -242,10 +244,11 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Botanical Courtyard Morning Light',
     category: 'architecture',
     caption: 'Calm water features connecting the guest villas.',
-    image: '/src/assets/images/hero_aurelia_resort_1790869743175.jpg',
+    image: IMAGES.hero,
     spanClass: 'col-span-1 md:col-span-1 row-span-1'
   }
 ];
+
 
 export const TESTIMONIALS_DATA: Testimonial[] = [
   {

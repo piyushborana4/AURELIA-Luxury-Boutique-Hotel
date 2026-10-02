@@ -1,8 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Sparkles, Award, Shield, HeartHandshake } from 'lucide-react';
 import { STATS_DATA } from '../data/hotelData';
+import { IMAGES } from '../assets/images';
 
 export const AboutSection: React.FC = () => {
+
   const [hasAnimated, setHasAnimated] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -59,7 +61,7 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="aspect-[4/3] overflow-hidden border border-white/10 shadow-2xl">
               <img
-                src="/src/assets/images/hero_aurelia_resort_1790869743175.jpg"
+                src={IMAGES.hero}
                 alt="Aurelia Estate Architectural Design"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

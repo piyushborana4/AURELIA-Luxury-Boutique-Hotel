@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown, ArrowRight, Sparkles } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -12,12 +13,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExplore }) => {
       {/* Background Image Container with Slow Zoom */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_aurelia_resort_1790869743175.jpg"
+          src={IMAGES.hero}
           alt="Aurelia Luxury Boutique Hotel at Golden Hour"
           className="w-full h-full object-cover object-center scale-105 animate-fade-in duration-1000"
           style={{ animation: 'pulse-slow 20s ease-in-out infinite alternate' }}
           referrerPolicy="no-referrer"
         />
+
         {/* Measured dark scrim for 4.5:1 text contrast */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0D0F11] via-[#0D0F11]/55 to-[#0D0F11]/40" />
         <div className="absolute inset-0 bg-black/20" />

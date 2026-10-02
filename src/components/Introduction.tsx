@@ -1,5 +1,6 @@
 import React from 'react';
 import { Compass, Sparkles, Feather, ShieldCheck } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 export const Introduction: React.FC = () => {
   return (
@@ -56,7 +57,7 @@ export const Introduction: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative z-10 img-zoom-container border border-white/10 shadow-2xl">
               <img
-                src="/src/assets/images/hero_aurelia_resort_1790869743175.jpg"
+                src={IMAGES.hero}
                 alt="Aurelia Estate Courtyard Architecture"
                 className="w-full h-[450px] md:h-[540px] object-cover"
                 referrerPolicy="no-referrer"
@@ -82,3 +83,4 @@ export const Introduction: React.FC = () => {
     </section>
   );
 };
+
