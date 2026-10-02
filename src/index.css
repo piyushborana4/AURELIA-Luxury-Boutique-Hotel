@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Italiana", "Cormorant Garamond", Georgia, serif;
+  
+  --color-gold-50: #FCF9F2;
+  --color-gold-100: #F7F1E1;
+  --color-gold-200: #EEDEB8;
+  --color-gold-300: #DEC489;
+  --color-gold-400: #C9A96E;
+  --color-gold-500: #B28E4D;
+  --color-gold-600: #937138;
+  
+  --color-charcoal-900: #0D0F11;
+  --color-charcoal-800: #14171B;
+  --color-charcoal-700: #1C2026;
+  --color-charcoal-600: #262B33;
+  --color-charcoal-500: #3D4450;
+  
+  --color-ivory-50: #FAFAF7;
+  --color-ivory-100: #F4F3EE;
+  --color-ivory-200: #EBE8E0;
+  --color-ivory-300: #D8D4C8;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #0D0F11;
+    color: #E8E4DC;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0F11;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2F3A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A96E;
+}
+
+/* Luxury subtle image zoom */
+.img-zoom-container {
+  overflow: hidden;
+}
+.img-zoom-container img {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+}
+.img-zoom-container:hover img {
+  transform: scale(1.06);
+}
+
+/* Subtle line animation */
+.hover-gold-line {
+  position: relative;
+}
+.hover-gold-line::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #C9A96E;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-gold-line:hover::after {
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

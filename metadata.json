@@ -1,0 +1,7 @@
+{
+  "name": "AURELIA — Luxury Boutique Hotel",
+  "description": "Where Every Stay Becomes a Story. An intimate luxury retreat combining modern architecture, natural surroundings, and personalized hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
